@@ -4,6 +4,7 @@ def scan(ip):
     arp_request = scapy.ARP(pdst=ip)
     arp_request.show()
     broadcast = scapy.Ether(dst="ff:ff:ff:ff:ff:ff")
+    broadcast.show()
     
     scapy.arping(ip)
 
