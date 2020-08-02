@@ -7,6 +7,6 @@ def scan(ip):
     broadcast.show()
     arp_request_broadcast = broadcast/arp_request
     arp_request_broadcast.show()
-    scapy.arping(ip)
+    
 
 scan("10.0.2.1/24")
